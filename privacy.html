@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daybook AI — Privacy Policy</title>
+<meta name="description" content="Daybook AI privacy policy. Local-first; your data stays on your device. Google Calendar API use follows the Google API Services User Data Policy, including Limited Use.">
+<style>
+  :root { --brand:#7c3aed; --ink:#0f1222; --muted:#5b6072; --bg:#fff; --line:#e7e7ef; }
+  body { margin:0; font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--bg); }
+  .wrap { max-width:760px; margin:0 auto; padding:48px 20px 72px; }
+  h1 { font-size:30px; letter-spacing:-.02em; margin:.2em 0; }
+  h2 { font-size:20px; margin:1.6em 0 .4em; }
+  .eff { color:var(--muted); }
+  a { color:var(--brand); }
+  ul { padding-left:20px; } li { margin:7px 0; }
+  .tldr { background:#f7f7fb; border:1px solid var(--line); border-radius:14px; padding:14px 18px; margin:18px 0; }
+  footer { margin-top:36px; color:var(--muted); font-size:14px; border-top:1px solid var(--line); padding-top:18px; }
+  code { background:#f1f0f7; padding:1px 6px; border-radius:6px; font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Daybook AI — Privacy Policy</h1>
+  <p class="eff"><strong>Effective date: June 14, 2026</strong></p>
+  <p>Daybook AI (“the app”) is published by EScience Apps. This policy describes what data the app handles and where it goes. <strong>The short version: your data stays on your device.</strong></p>
+
+  <h2>What the app accesses</h2>
+  <ul>
+    <li><strong>Calendar (READ_CALENDAR / WRITE_CALENDAR).</strong> Daybook reads and writes the calendars already stored on your device (via Android’s Calendar Provider) so you can view, create, move, and delete events. Calendar data is processed on your device only.</li>
+    <li><strong>Reliable sync — Google Calendar API (optional, off by default).</strong> If you turn on “Reliable sync” and link a Google account, Daybook uses the Google Calendar API (the <code>https://www.googleapis.com/auth/calendar</code> scope) to keep your calendar events in sync directly between your device and Google — reading your events and writing the events you create, edit, move, or delete in Daybook. This sync runs <strong>directly between your device and Google’s servers</strong> under your own Google account; the event data is <strong>never routed through, copied to, or stored on any Daybook / EScience Apps server — none exists.</strong> You can unlink the account or turn Reliable sync off at any time in Settings, and you can revoke Daybook’s access in your Google Account permissions.</li>
+    <li><strong>Contacts (READ_CONTACTS).</strong> Daybook reads your device contacts — names, phone numbers, birthdays, and anniversaries — to show birthdays on your calendar, autocomplete names, and build each person’s timeline. Contact data is processed on your device only and is never uploaded anywhere.</li>
+    <li><strong>App-created data.</strong> Call logs, notes, tasks, promises, and relationship metadata you create in Daybook are stored in the app’s local database on your device.</li>
+    <li><strong>Notifications (optional, off by default).</strong> If you grant notification access and choose which apps to listen to, Daybook reads those apps’ notification text to spot appointments (“dentist Tuesday 3pm”) and suggest them as calendar events. Notification text is analyzed <strong>entirely on your device</strong>, stored only in the app’s local database, and never uploaded. Suggestions are added only when you tap Add.</li>
+    <li><strong>Shared content (only when you share it).</strong> When you use Android’s Share menu to send a message, email, or screenshot to Daybook, that content is processed on your device to propose a calendar event, and goes nowhere else.</li>
+  </ul>
+
+  <h2>What the app does NOT do</h2>
+  <ul>
+    <li>No account or sign-up. The app has no server; nothing is synced to us.</li>
+    <li>No analytics, tracking, or advertising SDKs.</li>
+    <li>No sale or sharing of personal data with anyone. We never see your data at all.</li>
+  </ul>
+
+  <h2>On-device AI (the default)</h2>
+  <p>Daybook’s default AI assistant is a small language model that runs <strong>entirely on your phone</strong> (via Google’s MediaPipe LLM Inference). Installing it is a one-time download of the model file (about 550&nbsp;MB) from a public model repository (Hugging Face). That download carries <strong>none of your data</strong>. After it, every AI feature runs offline: no key, no account, no network, no cost.</p>
+
+  <h2>Optional cloud AI (bring your own key)</h2>
+  <p>Cloud AI is used <strong>only if you choose it</strong> and supply your own API key (Anthropic, OpenAI, or Google). When it runs, the minimum needed context is sent <strong>directly from your device to your chosen provider</strong>, under your key and that provider’s terms. It never passes through any Daybook server. Keys are stored in Android Keystore-encrypted storage and sent only to the provider they belong to. Disable cloud AI any time; the app stays fully functional on built-in on-device intelligence.</p>
+
+  <h2>Google user data and the Google API Services User Data Policy</h2>
+  <div class="tldr">Daybook AI’s use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the <strong>Limited Use</strong> requirements.</div>
+  <p>Specifically, for data obtained through the Google Calendar API:</p>
+  <ul>
+    <li>Daybook accesses your Google <strong>calendar events</strong> only to provide and improve the calendar-sync feature you explicitly enabled (“Reliable sync”). It is used for <strong>no other purpose</strong>.</li>
+    <li>Your Google Calendar data is <strong>not</strong> transferred to any Daybook / EScience Apps server (there is no server), and is <strong>not</strong> sold, shared, or transferred to any third party.</li>
+    <li>Your Google Calendar data is <strong>not</strong> used for advertising, and is <strong>not</strong> used to train any generalized or third-party AI/ML model.</li>
+    <li>No humans read your Google Calendar data, except where you give explicit permission, for security purposes, or as required by law.</li>
+  </ul>
+
+  <h2>Data retention and deletion</h2>
+  <p>All app data lives on your device. Deleting the app deletes the app’s own database and stored keys. Calendar events and contacts belong to your device’s system stores and the accounts that own them. You can revoke Daybook’s Google access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+  <h2>Children</h2>
+  <p>Daybook AI is not directed at children under 13.</p>
+
+  <h2>Changes &amp; contact</h2>
+  <p>We will update this page when the policy changes. Questions: <a href="mailto:dagelet@gmail.com">dagelet@gmail.com</a> or open an issue at <a href="https://github.com/ESCIENCECORP/Daybook-Android-AI">github.com/ESCIENCECORP/Daybook-Android-AI</a>.</p>
+
+  <footer>© EScience Apps. Daybook AI. · <a href="/">Home</a></footer>
+</div>
+</body>
+</html>
