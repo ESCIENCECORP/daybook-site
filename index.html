@@ -156,18 +156,31 @@
   footer .links a:hover { color: var(--text-primary); }
   footer .cp { font-size: 13px; color: var(--text-muted); }
 
-  /* ---------- Responsive ---------- */
+  /* ---------- Responsive ----------
+     >920px  desktop: full two-pane hero + mockups, 3-col features
+     761–920 tablet / open foldable: keep two-pane hero + mockups, 2-col features
+     ≤760    large phone / small tablet portrait: single column, mockups hidden
+     ≤620    phone: stack features, hide secondary nav, smaller display type      */
   @media (max-width: 920px) {
-    .hero .grid { grid-template-columns: 1fr; gap: 8px; padding: 44px 0 40px; }
-    .hero .phone { display: none; }
+    .hero .grid { gap: 28px; padding: 52px 0 48px; }
+    .hero .phone { width: 280px; }
+    .phone { width: 270px; }
     h1.hero-h { font-size: 46px; }
+    .hero-sub { font-size: 17px; }
     .fgrid { grid-template-columns: 1fr 1fr; }
-    .split, .split.rev { grid-template-columns: 1fr; gap: 32px; }
+    .split, .split.rev { gap: 36px; }
+    .split h2 { font-size: 28px; }
+    .value h2 { font-size: 30px; }
+    .privacy h2 { font-size: 34px; }
+    .sec-head h2 { font-size: 34px; }
+  }
+  @media (max-width: 760px) {
+    .hero .grid { grid-template-columns: 1fr; gap: 10px; padding: 44px 0 40px; }
+    .hero .phone { display: none; }
+    h1.hero-h { font-size: 44px; }
+    .split, .split.rev { grid-template-columns: 1fr; }
     .split.rev .copy { order: 0; }
     .split .phone { display: none; }
-    .pcards { grid-template-columns: 1fr; }
-    .value h2 { font-size: 28px; }
-    .privacy h2 { font-size: 32px; }
   }
   @media (max-width: 620px) {
     .wrap { padding: 0 20px; }
@@ -175,9 +188,12 @@
     h1.hero-h { font-size: 38px; }
     .hero-sub { font-size: 16px; }
     .fgrid { grid-template-columns: 1fr; }
+    .pcards { grid-template-columns: 1fr; }
     .section { padding: 56px 0; }
     .cta h2 { font-size: 34px; }
     .sec-head h2 { font-size: 30px; }
+    .value h2 { font-size: 26px; }
+    .privacy h2 { font-size: 28px; }
   }
 </style>
 </head>
