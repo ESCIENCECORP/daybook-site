@@ -1,0 +1,59 @@
+/* ============================================================
+   Daybook AI — Spacing, radius, elevation, sizing, z-index
+   A 4px base grid. Radii are generous (12–20px) — the app's cards,
+   pills, and inputs are softly rounded. Shadows are low and diffuse.
+   Ported from globals.css.
+   ============================================================ */
+
+:root {
+  /* Spacing — 4px grid */
+  --space-0: 0px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 28px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* Border radius */
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 12px;  /* default card / input */
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+  --radius-pill: 999px;
+  /* The app icon / logo tile uses a 22.5% continuous "squircle" corner */
+  --radius-app-tile: 28%;
+
+  /* Elevation — low, soft, neutral. Cards lean on shadow-sm. */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 24px 60px rgba(0, 0, 0, 0.14);
+  /* Brand-tinted glow used behind the logo tile on light marketing canvases */
+  --shadow-brand: 0 18px 40px rgba(124, 58, 237, 0.28);
+
+  /* Component sizing */
+  --button-height-sm: 32px;
+  --button-height-md: 40px;
+  --button-height-lg: 48px;
+  --input-height-md: 40px;
+  --input-height-lg: 48px;
+  --tap-target-min: 44px; /* never smaller for touch */
+
+  /* Z-index scale */
+  --z-dropdown: 30; /* @kind other */
+  --z-sticky-header: 40; /* @kind other */
+  --z-modal: 50; /* @kind other */
+  --z-toast: 60; /* @kind other */
+  --z-fab: 70; /* @kind other */
+}

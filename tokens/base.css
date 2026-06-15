@@ -1,0 +1,45 @@
+/* ============================================================
+   Daybook AI — Base element styles + a few semantic utilities
+   Mirrors globals.css body defaults so consuming pages and
+   specimen cards inherit the brand baseline.
+   ============================================================ */
+
+body {
+  background: var(--bg-app);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-normal);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Semantic text helpers */
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-muted { color: var(--text-muted); }
+.text-brand { color: var(--brand-primary); }
+
+/* Semantic surfaces */
+.bg-app { background-color: var(--bg-app); }
+.bg-surface { background-color: var(--bg-surface); }
+.bg-surface-muted { background-color: var(--bg-surface-muted); }
+.bg-brand { background-color: var(--brand-primary); color: var(--text-inverse); }
+.theme-border { border-color: var(--border); }
+
+/* The signature micro-label: tiny, bold, uppercase, wide-tracked, muted.
+   Used as section eyebrows across Today, People, Tasks. */
+.eyebrow {
+  font-size: 10px;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide-caps);
+  color: var(--text-muted);
+}
+
+/* Tabular numerals for clocks, dates, calendar numbers */
+.nums { font-variant-numeric: tabular-nums; }

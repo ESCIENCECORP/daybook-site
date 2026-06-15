@@ -1,0 +1,15 @@
+/* ============================================================
+   Daybook AI — Webfonts
+   The product ships Inter as its only typeface (declared in
+   globals.css as `--font-sans: Inter, ui-sans-serif, system-ui…`).
+   We load the real Inter from Google Fonts so specimens, cards, and
+   consuming designs render in the brand face rather than a system
+   fallback. No custom/licensed binaries are involved — Inter is the
+   genuine brand font, not a substitute.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,400&display=swap');
+
+/* JetBrains-style mono is NOT used by the product; the app uses the
+   platform UI font everywhere. Numeric/tabular contexts (clocks,
+   calendar) simply use Inter with tabular-nums where helpful. */

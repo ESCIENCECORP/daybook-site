@@ -1,0 +1,179 @@
+/* ============================================================
+   Daybook AI — Color tokens
+   Ported verbatim from the app's globals.css. Two themes:
+   :root/.light (default) and .dark. Base values first, semantic
+   aliases at the bottom of each theme block.
+   ============================================================ */
+
+:root,
+.light {
+  /* Backgrounds */
+  --bg-app: #f5f7fb;
+  --bg-surface: #ffffff;
+  --bg-surface-muted: #f1f3f7;
+  --bg-surface-subtle: #fafbfd;
+
+  /* Borders */
+  --border-soft: #e5e7eb;
+  --border-subtle: #e3e7ef;
+  --border-strong: #cbd5e1;
+
+  /* Text */
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  --text-muted: #94a3b8;
+  --text-disabled: #9ca3af;
+  --text-inverse: #ffffff;
+
+  /* Brand — purple */
+  --brand-primary: #7c3aed;
+  --brand-primary-hover: #6d28d9;
+  --brand-primary-pressed: #5b21b6;
+  --brand-primary-soft: #ede9fe;
+  --brand-primary-soft-hover: #ddd6fe;
+  /* Brand gradient (logo tile, splash, marketing accents) */
+  --brand-gradient: linear-gradient(155deg, #8b5cf6 0%, #7c3aed 55%, #6d28d9 100%); /* @kind color */
+
+  /* Status */
+  --status-success: #22c55e;
+  --status-success-soft: #ecfdf5;
+  --status-warning: #f59e0b;
+  --status-warning-soft: #fffbeb;
+  --status-danger: #ef4444;
+  --status-danger-soft: #fef2f2;
+  --status-info: #6366f1;
+  --status-info-soft: #eef2ff;
+
+  /* Relationship circles — same color axis as the app's customer tiers.
+     family (high) / colleague (medium) / friend (low) + close=brand. */
+  --tier-high: #e11d48;
+  --tier-high-soft: #fff1f2;
+  --tier-high-muted: rgba(225, 29, 72, 0.1);
+  --tier-medium: #b45309;
+  --tier-medium-soft: #fffbeb;
+  --tier-medium-muted: rgba(180, 83, 9, 0.1);
+  --tier-low: #0e7490;
+  --tier-low-soft: #ecfeff;
+  --tier-low-muted: rgba(14, 116, 144, 0.1);
+
+  /* Event status glyphs (status is a glyph, not a color) */
+  --glyph-done: #16a34a;
+  --glyph-missed: #dc2626;
+  --glyph-approved: var(--brand-primary);
+  --glyph-draft: #94a3b8;
+
+  /* Calendar surface */
+  --calendar-day-bg: #ffffff;
+  --calendar-day-hover-bg: #f1f5ff;
+  --calendar-day-selected-bg: #7c3aed;
+  --calendar-day-selected-text: #ffffff;
+  --calendar-day-inactive-bg: #f1f3f6;
+  --calendar-day-inactive-text: #9ca3af;
+  --calendar-today-ring: #7c3aed;
+  --calendar-event-dot: #7c3aed;
+  --calendar-today-tint: rgba(79, 70, 229, 0.06);
+  --calendar-now-line: #dc2626;
+
+  /* Focus */
+  --focus-ring: #7c3aed;
+  --focus-ring-soft: rgba(124, 58, 237, 0.25);
+
+  /* Semantic mappings */
+  --background: var(--bg-app);
+  --foreground: var(--text-primary);
+  --card: var(--bg-surface);
+  --card-foreground: var(--text-primary);
+  --muted: var(--bg-surface-muted);
+  --muted-foreground: var(--text-secondary);
+  --border: var(--border-soft);
+  --primary: var(--brand-primary);
+  --primary-foreground: var(--text-inverse);
+  --accent: var(--brand-primary-soft);
+  --accent-foreground: var(--brand-primary);
+  color-scheme: light;
+}
+
+.dark {
+  /* Backgrounds */
+  --bg-app: #0f172a;
+  --bg-surface: #1e293b;
+  --bg-surface-muted: #334155;
+  --bg-surface-subtle: #1e293b;
+
+  /* Borders */
+  --border-soft: #334155;
+  --border-subtle: #475569;
+  --border-strong: #64748b;
+
+  /* Text */
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-disabled: #475569;
+  --text-inverse: #0f172a;
+
+  /* Brand */
+  --brand-primary: #8b5cf6;
+  --brand-primary-hover: #a78bfa;
+  --brand-primary-pressed: #7c3aed;
+  --brand-primary-soft: #1e1b4b;
+  --brand-primary-soft-hover: #312e81;
+  --brand-gradient: linear-gradient(155deg, #a78bfa 0%, #8b5cf6 55%, #7c3aed 100%); /* @kind color */
+
+  /* Status */
+  --status-success: #22c55e;
+  --status-success-soft: #14532d;
+  --status-warning: #f59e0b;
+  --status-warning-soft: #713f12;
+  --status-danger: #ef4444;
+  --status-danger-soft: #7f1d1d;
+  --status-info: #6366f1;
+  --status-info-soft: #312e81;
+
+  /* Circles */
+  --tier-high: #fb7185;
+  --tier-high-soft: #3b151b;
+  --tier-high-muted: rgba(251, 113, 133, 0.15);
+  --tier-medium: #fbbf24;
+  --tier-medium-soft: #351304;
+  --tier-medium-muted: rgba(251, 191, 36, 0.15);
+  --tier-low: #22d3ee;
+  --tier-low-soft: #0a2634;
+  --tier-low-muted: rgba(34, 211, 238, 0.15);
+
+  /* Glyphs */
+  --glyph-done: #4ade80;
+  --glyph-missed: #f87171;
+  --glyph-approved: var(--brand-primary);
+  --glyph-draft: #64748b;
+
+  /* Calendar */
+  --calendar-day-bg: #1e293b;
+  --calendar-day-hover-bg: #334155;
+  --calendar-day-selected-bg: #8b5cf6;
+  --calendar-day-selected-text: #ffffff;
+  --calendar-day-inactive-bg: #0f172a;
+  --calendar-day-inactive-text: #475569;
+  --calendar-today-ring: #8b5cf6;
+  --calendar-event-dot: #8b5cf6;
+  --calendar-today-tint: rgba(129, 140, 248, 0.08);
+  --calendar-now-line: #f87171;
+
+  /* Focus */
+  --focus-ring: #8b5cf6;
+  --focus-ring-soft: rgba(139, 92, 246, 0.25);
+
+  /* Semantic mappings */
+  --background: var(--bg-app);
+  --foreground: var(--text-primary);
+  --card: var(--bg-surface);
+  --card-foreground: var(--text-primary);
+  --muted: var(--bg-surface-muted);
+  --muted-foreground: var(--text-secondary);
+  --border: var(--border-soft);
+  --primary: var(--brand-primary);
+  --primary-foreground: var(--text-inverse);
+  --accent: var(--brand-primary-soft);
+  --accent-foreground: var(--brand-primary);
+  color-scheme: dark;
+}

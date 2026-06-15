@@ -1,0 +1,42 @@
+/* ============================================================
+   Daybook AI — Typography tokens
+   The product uses a single typeface (Inter) with a compact,
+   contrast-first scale. Body sits at 14px; UI labels run small
+   and uppercase-tracked. Ported from globals.css.
+   ============================================================ */
+
+:root {
+  /* Family */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  /* Size scale (px — the app is a touch UI, so the scale is dense) */
+  --font-size-xs: 12px;
+  --font-size-sm: 13px;
+  --font-size-md: 14px; /* body default */
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 30px;
+  /* Marketing/display sizes (one-pager headlines — larger than the app) */
+  --font-size-5xl: 40px;
+  --font-size-6xl: 56px;
+  --font-size-7xl: 72px;
+
+  /* Line height */
+  --line-height-tight: 1.2;
+  --line-height-snug: 1.35;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.65;
+
+  /* Weight */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Tracking */
+  --tracking-tight: -0.02em;  /* display headlines */
+  --tracking-normal: 0em;
+  --tracking-wide-caps: 0.08em; /* the signature uppercase micro-label */
+}
