@@ -49,7 +49,7 @@
   /* ---------- Hero ---------- */
   .hero { position: relative; overflow: hidden; }
   .hero-glow { position: absolute; top: -180px; left: 50%; transform: translateX(-30%); width: 720px; height: 720px; background: radial-gradient(circle, rgba(124,58,237,0.18), transparent 62%); pointer-events: none; }
-  .hero .grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 40px; align-items: center; padding: 64px 0 56px; }
+  .hero .grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 40px; align-items: center; padding-block: 64px 56px; }
   .eyebrow { display: inline-flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--brand-primary); background: var(--brand-primary-soft); padding: 6px 14px; border-radius: var(--radius-pill); white-space: nowrap; }
   h1.hero-h { margin: 18px 0 0; font-size: 58px; line-height: 1.04; font-weight: 700; letter-spacing: -0.025em; }
   h1.hero-h .grad { background: var(--brand-gradient); -webkit-background-clip: text; background-clip: text; color: transparent; }
@@ -162,7 +162,7 @@
      ≤760    large phone / small tablet portrait: single column, mockups hidden
      ≤620    phone: stack features, hide secondary nav, smaller display type      */
   @media (max-width: 920px) {
-    .hero .grid { gap: 28px; padding: 52px 0 48px; }
+    .hero .grid { gap: 28px; padding-block: 52px 48px; }
     .hero .phone { width: 280px; }
     .phone { width: 270px; }
     h1.hero-h { font-size: 46px; }
@@ -175,7 +175,7 @@
     .sec-head h2 { font-size: 34px; }
   }
   @media (max-width: 760px) {
-    .hero .grid { grid-template-columns: 1fr; gap: 10px; padding: 44px 0 40px; }
+    .hero .grid { grid-template-columns: 1fr; gap: 10px; padding-block: 44px 40px; }
     .hero .phone { display: none; }
     h1.hero-h { font-size: 44px; }
     .split, .split.rev { grid-template-columns: 1fr; }
