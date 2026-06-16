@@ -107,7 +107,8 @@
   color-scheme: light;
 }
 
-.dark {
+@media (prefers-color-scheme: dark) {
+ :root:not(.light) {
   /* Backgrounds */
   --bg-app: #0f172a;
   --bg-surface: #1e293b;
@@ -200,4 +201,5 @@
   --accent: var(--brand-primary-soft);
   --accent-foreground: var(--brand-ink);
   color-scheme: dark;
+ }
 }
