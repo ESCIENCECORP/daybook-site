@@ -71,11 +71,10 @@
   /* ---------- Store badges ---------- */
   .stores { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
   .badge-play img { display: block; height: 56px; width: auto; }
-  .badge-soon { display: inline-flex; align-items: center; gap: 10px; height: 56px; padding: 0 18px; border-radius: 11px; border: 1px solid var(--border-strong); background: var(--bg-surface-muted); color: var(--text-muted); cursor: default; }
-  .badge-soon .ic { display: inline-flex; }
-  .badge-soon .tx { display: flex; flex-direction: column; line-height: 1.15; text-align: left; }
-  .badge-soon .tx small { font-size: 10px; letter-spacing: 0.04em; }
-  .badge-soon .tx b { font-size: 15px; font-weight: 600; color: var(--text-secondary); }
+  .badge-soon { display: inline-flex; align-items: center; gap: 11px; cursor: default; }
+  .badge-soon img { height: 52px; width: auto; opacity: 0.55; }
+  .badge-soon small { font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-muted); }
+  @media (prefers-color-scheme: dark) { .badge-soon img { opacity: 0.72; filter: invert(1); } }
 
   /* ---------- Hero ---------- */
   .hero { position: relative; overflow: hidden; }
@@ -276,7 +275,7 @@
     <div class="hero-cta">
       <div class="stores">
         <a class="badge-play" href="https://play.google.com/store/apps/details?id=com.escienceapps.daybook" aria-label="Get it on Google Play"><img src="/assets/badges/google-play.png" alt="Get it on Google Play" /></a>
-        <span class="badge-soon" aria-label="iOS coming soon"><span class="ic"><i data-lucide="apple" width="22" height="22"></i></span><span class="tx"><small>COMING SOON</small><b>App Store</b></span></span>
+        <span class="badge-soon" aria-label="Daybook AI — coming soon to the App Store"><img src="/assets/badges/app-store.svg" alt="Download on the App Store" /><small>Coming soon</small></span>
       </div>
       <p class="soon-note">Free. No account. The AI is already inside.</p>
     </div>
@@ -468,7 +467,7 @@
   <p>One download. No account. The AI is already inside.</p>
   <div class="stores">
     <a class="badge-play" href="https://play.google.com/store/apps/details?id=com.escienceapps.daybook" aria-label="Get it on Google Play"><img src="/assets/badges/google-play.png" alt="Get it on Google Play" /></a>
-    <span class="badge-soon" aria-label="iOS coming soon"><span class="ic"><i data-lucide="apple" width="22" height="22"></i></span><span class="tx"><small>COMING SOON</small><b>App Store</b></span></span>
+    <span class="badge-soon" aria-label="Daybook AI — coming soon to the App Store"><img src="/assets/badges/app-store.svg" alt="Download on the App Store" /><small>Coming soon</small></span>
   </div>
 </div></section>
 
