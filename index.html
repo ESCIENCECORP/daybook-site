@@ -166,6 +166,10 @@
     .fold-cover { position: static; width: 150px; margin: 20px auto 0; left: 0; bottom: 0; }
     .fold-open::after { display: none; }
   }
+  .fold-second { margin-top: 54px; }
+  .fold-second .fold-open { max-width: 940px; margin: 0 auto; }
+  .fold-cap { text-align: center; margin: 18px auto 0; max-width: 560px; font-size: 14.5px; line-height: 1.55; color: var(--text-secondary); }
+  .fold-cap b { color: var(--text-primary); font-weight: 600; }
 
   /* ---------- CTA ---------- */
   .cta { padding: 88px 0; text-align: center; position: relative; overflow: hidden; }
@@ -334,7 +338,12 @@
     <div class="fold-open"><img src="/assets/shots/fold-open-today.png" alt="Daybook AI unfolded on a foldable — the two-pane Today screen with the on-device AI morning brief, day-at-a-glance clocks and timeline" /></div>
     <div class="fold-cover"><img src="/assets/shots/fold-cover-today.png" alt="Daybook AI on the folded cover screen — a one-handed phone layout of Today" /></div>
   </div>
-</div></div></section>
+</div>
+  <div class="fold-second">
+    <div class="fold-open"><img src="/assets/shots/fold-open-calendar.png" alt="Daybook AI unfolded — the full month calendar with events and birthdays, today highlighted, and the day's agenda below" /></div>
+    <p class="fold-cap"><b>Unfolded, your whole month opens up</b> — events, birthdays and today's agenda at a glance, drag-to-reschedule, and the AI a tap away.</p>
+  </div>
+</div></section>
 
 <!-- SPLIT 1: Proactive Today -->
 <section class="section" style="background:var(--bg-app);border-top:1px solid var(--border);"><div class="wrap">
