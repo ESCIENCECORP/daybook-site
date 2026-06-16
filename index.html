@@ -6,7 +6,7 @@
 <title>Daybook AI — your private AI calendar</title>
 <meta name="description" content="Daybook AI is a private, local-first AI calendar and life-memory app. Free on-device AI, no account, works offline. Your events, people, promises and birthdays in one private place. Now on Android, iOS coming soon." />
 <link rel="canonical" href="https://daybook-ai.com/" />
-<meta name="theme-color" content="#7c3aed" />
+<meta name="theme-color" content="#f59e0b" />
 <link rel="icon" type="image/png" href="/assets/brand/icon-only.png" />
 <link rel="apple-touch-icon" href="/assets/brand/DaybookAI_Icon_512x512.png" />
 <!-- Open Graph / Twitter -->
@@ -36,23 +36,23 @@
   .brand { display: flex; align-items: center; gap: 10px; }
   .brand img { width: 32px; height: 32px; border-radius: 9px; }
   .brand .t { font-size: 18px; font-weight: 700; letter-spacing: -0.01em; }
-  .brand .t .ai { color: var(--brand-primary); }
+  .brand .t .ai { color: var(--brand-ink); }
   .nav-links { display: flex; align-items: center; gap: 28px; }
   .nav-links a { font-size: 14px; font-weight: 500; color: var(--text-secondary); }
   .nav-links a:hover { color: var(--text-primary); }
-  .nav-links .btn:hover { color: #fff; }
+  .nav-links .btn:hover { color: var(--brand-on); }
   .btn { display: inline-flex; align-items: center; gap: 8px; height: 42px; padding: 0 20px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; cursor: pointer; border: 1px solid transparent; white-space: nowrap; }
-  .btn-primary { background: var(--brand-primary); color: #fff; }
+  .btn-primary { background: var(--brand-primary); color: var(--brand-on); }
   .btn-primary:hover { background: var(--brand-primary-hover); }
   .btn-ghost { background: transparent; color: var(--text-primary); border-color: var(--border-strong); }
 
   /* ---------- Hero ---------- */
   .hero { position: relative; overflow: hidden; }
-  .hero-glow { position: absolute; top: -180px; left: 50%; transform: translateX(-30%); width: 720px; height: 720px; background: radial-gradient(circle, rgba(124,58,237,0.18), transparent 62%); pointer-events: none; }
+  .hero-glow { position: absolute; top: -180px; left: 50%; transform: translateX(-30%); width: 720px; height: 720px; background: radial-gradient(circle, rgba(245,158,11,0.2), transparent 62%); pointer-events: none; }
   .hero .grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 40px; align-items: center; padding-block: 64px 56px; }
-  .eyebrow { display: inline-flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--brand-primary); background: var(--brand-primary-soft); padding: 6px 14px; border-radius: var(--radius-pill); white-space: nowrap; }
+  .eyebrow { display: inline-flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--brand-ink); background: var(--brand-primary-soft); padding: 6px 14px; border-radius: var(--radius-pill); white-space: nowrap; }
   h1.hero-h { margin: 18px 0 0; font-size: 58px; line-height: 1.04; font-weight: 700; letter-spacing: -0.025em; }
-  h1.hero-h .grad { background: var(--brand-gradient); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  h1.hero-h .grad { background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
   .hero-sub { margin: 20px 0 0; font-size: 18px; line-height: 1.55; color: var(--text-secondary); max-width: 480px; }
   .hero-cta { display: flex; align-items: center; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
   .play { display: inline-flex; align-items: center; gap: 11px; height: 52px; padding: 0 22px 0 18px; background: #0f172a; color: #fff; border-radius: var(--radius-md); }
@@ -63,7 +63,7 @@
   .soon { font-size: 13px; font-weight: 600; color: var(--text-muted); display: inline-flex; align-items: center; gap: 7px; }
   .trust-row { display: flex; gap: 22px; margin-top: 28px; flex-wrap: wrap; }
   .trust-row span { display: inline-flex; align-items: center; gap: 7px; font-size: 13px; font-weight: 500; color: var(--text-secondary); }
-  .trust-row i { color: var(--brand-primary); }
+  .trust-row i { color: var(--brand-ink); }
 
   /* ---------- Phone mockup ---------- */
   .phone { width: 300px; margin: 0 auto; border-radius: 38px; background: #0f172a; padding: 9px; box-shadow: 0 40px 80px -24px rgba(15,23,42,0.45); }
@@ -72,15 +72,15 @@
   .ph-head { display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; background: var(--bg-surface); border-bottom: 1px solid var(--border); }
   .ph-head .b { display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; }
   .ph-head .b img { width: 26px; height: 26px; border-radius: 7px; }
-  .ph-head .b .ai { color: var(--brand-primary); }
+  .ph-head .b .ai { color: var(--brand-ink); }
   .ph-head .ic { display: flex; gap: 4px; color: var(--text-secondary); }
   .ph-body { padding: 14px; }
   .ey { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); }
   .card { background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-md); box-shadow: var(--shadow-sm); }
   .att { display: flex; align-items: center; gap: 9px; padding: 9px 11px; }
-  .att .ico { color: var(--brand-primary); display: inline-flex; flex-shrink: 0; }
+  .att .ico { color: var(--brand-ink); display: inline-flex; flex-shrink: 0; }
   .att .tx { font-size: 11.5px; font-weight: 500; line-height: 1.3; flex: 1; }
-  .att .cta { font-size: 11px; font-weight: 600; color: var(--brand-primary); background: var(--brand-primary-soft); padding: 4px 9px; border-radius: 7px; flex-shrink: 0; }
+  .att .cta { font-size: 11px; font-weight: 600; color: var(--brand-ink); background: var(--brand-primary-soft); padding: 4px 9px; border-radius: 7px; flex-shrink: 0; }
   .evrow { display: flex; align-items: center; gap: 10px; padding: 9px 11px; }
   .evrow + .evrow { border-top: 1px solid var(--border); }
   .evrow .bar { width: 4px; height: 28px; border-radius: 999px; flex-shrink: 0; }
@@ -88,23 +88,23 @@
   .evrow .ti { font-size: 12.5px; font-weight: 500; }
   .ph-nav { display: grid; grid-template-columns: repeat(5,1fr); border-top: 1px solid var(--border); background: var(--bg-surface); }
   .ph-nav span { display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 8px 0; font-size: 9px; font-weight: 500; color: var(--text-muted); }
-  .ph-nav span.on { color: var(--brand-primary); }
+  .ph-nav span.on { color: var(--brand-ink); }
 
   /* ---------- Value band ---------- */
   .value { background: var(--bg-app); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 60px 0; text-align: center; }
   .value h2 { margin: 0 auto; max-width: 800px; font-size: 36px; line-height: 1.22; font-weight: 700; letter-spacing: -0.02em; }
-  .value h2 .em { color: var(--brand-primary); }
+  .value h2 .em { color: var(--brand-ink); }
   .value p { margin: 16px auto 0; max-width: 540px; font-size: 16px; color: var(--text-secondary); }
 
   /* ---------- Features ---------- */
   .section { padding: 76px 0; }
   .sec-head { text-align: center; max-width: 640px; margin: 0 auto 52px; }
-  .sec-head .ey2 { color: var(--brand-primary); font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+  .sec-head .ey2 { color: var(--brand-ink); font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
   .sec-head h2 { margin: 12px 0 0; font-size: 38px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; }
   .sec-head p { margin: 14px 0 0; font-size: 16px; color: var(--text-secondary); }
   .fgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
   .fcard { background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 26px; box-shadow: var(--shadow-sm); }
-  .fcard .ic { width: 44px; height: 44px; border-radius: var(--radius-md); background: var(--brand-primary-soft); color: var(--brand-primary); display: flex; align-items: center; justify-content: center; margin-bottom: 18px; }
+  .fcard .ic { width: 44px; height: 44px; border-radius: var(--radius-md); background: var(--brand-primary-soft); color: var(--brand-ink); display: flex; align-items: center; justify-content: center; margin-bottom: 18px; }
   .fcard h3 { margin: 0 0 8px; font-size: 18px; font-weight: 700; letter-spacing: -0.01em; }
   .fcard p { margin: 0; font-size: 14px; line-height: 1.55; color: var(--text-secondary); }
 
@@ -112,7 +112,7 @@
   .split { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
   .split.rev .copy { order: 2; }
   .split + .split { margin-top: 80px; }
-  .split .ey2 { color: var(--brand-primary); font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+  .split .ey2 { color: var(--brand-ink); font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
   .split h2 { margin: 12px 0 0; font-size: 32px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.12; }
   .split p { margin: 16px 0 0; font-size: 16px; color: var(--text-secondary); line-height: 1.6; }
   .checks { margin: 22px 0 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
@@ -121,29 +121,29 @@
 
   /* ---------- Privacy band ---------- */
   .privacy { background: #0f172a; color: #fff; padding: 76px 0; }
-  .privacy .ey2 { color: #a78bfa; font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+  .privacy .ey2 { color: #fcd34d; font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
   .privacy h2 { margin: 12px 0 0; font-size: 40px; font-weight: 700; letter-spacing: -0.02em; max-width: 620px; }
   .privacy > .wrap > p { margin: 16px 0 0; font-size: 17px; color: #94a3b8; max-width: 560px; }
   .pcards { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-top: 44px; }
   .pcard { background: #1e293b; border: 1px solid #334155; border-radius: var(--radius-lg); padding: 24px; }
-  .pcard .ic { width: 40px; height: 40px; border-radius: var(--radius-md); background: rgba(139,92,246,0.15); color: #a78bfa; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+  .pcard .ic { width: 40px; height: 40px; border-radius: var(--radius-md); background: rgba(251,191,36,0.16); color: #fcd34d; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
   .pcard h3 { margin: 0 0 6px; font-size: 16px; font-weight: 700; }
   .pcard p { margin: 0; font-size: 13.5px; color: #94a3b8; line-height: 1.5; }
-  .privacy .pol { margin-top: 36px; display: inline-flex; align-items: center; gap: 7px; font-size: 14px; font-weight: 600; color: #a78bfa; }
-  .privacy .pol:hover { color: #c4b5fd; }
+  .privacy .pol { margin-top: 36px; display: inline-flex; align-items: center; gap: 7px; font-size: 14px; font-weight: 600; color: #fcd34d; }
+  .privacy .pol:hover { color: #fde68a; }
 
   /* ---------- Devices band ---------- */
   .devices { padding: 76px 0; text-align: center; background: var(--bg-app); border-top: 1px solid var(--border); }
   .devices h2 { margin: 12px 0 0; font-size: 34px; font-weight: 700; letter-spacing: -0.02em; }
-  .devices .ey2 { color: var(--brand-primary); font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+  .devices .ey2 { color: var(--brand-ink); font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
   .devices p { margin: 14px auto 0; max-width: 540px; font-size: 16px; color: var(--text-secondary); }
   .dchips { display: flex; justify-content: center; gap: 14px; margin-top: 32px; flex-wrap: wrap; }
   .dchip { display: inline-flex; align-items: center; gap: 9px; padding: 12px 20px; background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-pill); font-size: 14px; font-weight: 600; box-shadow: var(--shadow-xs); }
-  .dchip i { color: var(--brand-primary); }
+  .dchip i { color: var(--brand-ink); }
 
   /* ---------- CTA ---------- */
   .cta { padding: 88px 0; text-align: center; position: relative; overflow: hidden; }
-  .cta-glow { position: absolute; bottom: -260px; left: 50%; transform: translateX(-50%); width: 760px; height: 520px; background: radial-gradient(circle, rgba(124,58,237,0.16), transparent 62%); pointer-events: none; }
+  .cta-glow { position: absolute; bottom: -260px; left: 50%; transform: translateX(-50%); width: 760px; height: 520px; background: radial-gradient(circle, rgba(245,158,11,0.18), transparent 62%); pointer-events: none; }
   .cta .tile { width: 74px; height: 74px; margin: 0 auto 22px; border-radius: 22%; box-shadow: var(--shadow-brand); }
   .cta h2 { margin: 0; font-size: 46px; font-weight: 700; letter-spacing: -0.025em; }
   .cta p { margin: 16px auto 0; max-width: 460px; font-size: 17px; color: var(--text-secondary); }
@@ -230,7 +230,7 @@
   <div class="phone"><div class="phone-screen">
     <div class="ph-head">
       <span class="b"><img src="/assets/brand/icon-only.png" alt="" />Daybook <span class="ai">AI</span></span>
-      <span class="ic"><i data-lucide="sparkles" width="17" height="17" style="color:var(--brand-primary)"></i><i data-lucide="settings-2" width="17" height="17"></i><i data-lucide="moon" width="17" height="17"></i></span>
+      <span class="ic"><i data-lucide="sparkles" width="17" height="17" style="color:var(--brand-ink)"></i><i data-lucide="settings-2" width="17" height="17"></i><i data-lucide="moon" width="17" height="17"></i></span>
     </div>
     <div class="pscroll"><div class="ph-body">
       <div class="ey">Monday, June 15</div>
@@ -240,15 +240,15 @@
         <div style="font-size:12.5px;line-height:1.5;">A light morning — Team Sync at 10, then clear until your 1:1. It's Sarah's birthday in three days; I added a reminder.</div>
         <div style="font-size:9.5px;color:var(--text-muted);margin-top:7px;display:flex;align-items:center;gap:5px;"><i data-lucide="lock" width="11" height="11"></i> Written by the on-device AI — nothing left your phone</div>
       </div>
-      <div class="ey" style="margin:16px 0 7px;display:flex;align-items:center;gap:5px;"><i data-lucide="sparkles" width="11" height="11" style="color:var(--brand-primary)"></i> Needs your attention</div>
+      <div class="ey" style="margin:16px 0 7px;display:flex;align-items:center;gap:5px;"><i data-lucide="sparkles" width="11" height="11" style="color:var(--brand-ink)"></i> Needs your attention</div>
       <div class="card att" style="margin-bottom:7px;"><span class="ico"><i data-lucide="cake" width="16" height="16"></i></span><span class="tx">Sarah's birthday in 3 days — nothing planned yet</span><span class="cta">Add task</span></div>
       <div class="card att"><span class="ico"><i data-lucide="heart-handshake" width="16" height="16"></i></span><span class="tx">You haven't talked to Dad in 12 days</span><span class="cta">Call</span></div>
       <div class="ey" style="margin:16px 0 7px;">Today</div>
       <div class="card">
         <div class="evrow"><span class="bar" style="background:var(--border-strong)"></span><span class="tm">09:00</span><span class="ti" style="color:var(--text-muted);text-decoration:line-through;">Morning run</span></div>
-        <div class="evrow" style="background:color-mix(in srgb,var(--brand-primary-soft) 45%,transparent)"><span class="bar" style="background:#2563eb"></span><span class="tm">10:00</span><span class="ti">Team Sync</span></div>
-        <div class="evrow"><span class="bar" style="background:#7c3aed"></span><span class="tm">13:00</span><span class="ti">1:1 with Priya</span></div>
-        <div class="evrow"><span class="bar" style="background:#e11d48"></span><span class="tm">19:00</span><span class="ti">Call Dad</span></div>
+        <div class="evrow" style="background:color-mix(in srgb,var(--brand-primary-soft) 45%,transparent)"><span class="bar" style="background:var(--c6)"></span><span class="tm">10:00</span><span class="ti">Team Sync</span></div>
+        <div class="evrow"><span class="bar" style="background:var(--c1)"></span><span class="tm">13:00</span><span class="ti">1:1 with Priya</span></div>
+        <div class="evrow"><span class="bar" style="background:var(--c2)"></span><span class="tm">19:00</span><span class="ti">Call Dad</span></div>
       </div>
     </div></div>
     <div class="ph-nav">
@@ -301,7 +301,7 @@
     <div class="phone" style="width:280px"><div class="phone-screen"><div class="ph-body" style="padding:16px;">
       <div class="ey">Monday, June 15</div>
       <div style="font-size:20px;font-weight:700;margin:3px 0 10px;">Good morning.</div>
-      <div class="ey" style="margin-bottom:7px;display:flex;align-items:center;gap:5px;"><i data-lucide="sparkles" width="11" height="11" style="color:var(--brand-primary)"></i> Needs your attention</div>
+      <div class="ey" style="margin-bottom:7px;display:flex;align-items:center;gap:5px;"><i data-lucide="sparkles" width="11" height="11" style="color:var(--brand-ink)"></i> Needs your attention</div>
       <div class="card att" style="margin-bottom:7px;"><span class="ico"><i data-lucide="car" width="16" height="16"></i></span><span class="tx">Only 20 min buffer between two events across town</span></div>
       <div class="card att" style="margin-bottom:7px;"><span class="ico"><i data-lucide="cake" width="16" height="16"></i></span><span class="tx">Sarah's birthday in 3 days</span><span class="cta">Add task</span></div>
       <div class="card att"><span class="ico"><i data-lucide="heart-handshake" width="16" height="16"></i></span><span class="tx">Drifting from Dad — 12 days</span><span class="cta">Call</span></div>
@@ -330,12 +330,12 @@
       </ul>
     </div>
     <div class="phone" style="width:280px"><div class="phone-screen"><div class="ph-body" style="padding:16px;">
-      <div class="ey" style="display:flex;align-items:center;gap:5px;"><i data-lucide="heart-handshake" width="11" height="11" style="color:var(--brand-primary)"></i> Drifting</div>
+      <div class="ey" style="display:flex;align-items:center;gap:5px;"><i data-lucide="heart-handshake" width="11" height="11" style="color:var(--brand-ink)"></i> Drifting</div>
       <div class="card att" style="margin:7px 0 14px;"><span style="width:28px;height:28px;border-radius:999px;background:var(--tier-high);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;">D</span><span class="tx">You haven't talked to Dad in 12 days<br/><span style="font-size:9.5px;color:var(--text-muted);font-weight:400;">family · usually every ~30 days</span></span><span class="cta">Call</span></div>
       <div class="ey" style="margin-bottom:7px;">People</div>
       <div class="card">
-        <div class="evrow"><span style="width:30px;height:30px;border-radius:999px;background:var(--tier-high);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;">M</span><span style="flex:1;font-size:12.5px;font-weight:500;">Mom <span style="color:var(--tier-high);font-size:10px;">family</span></span><span style="font-size:9px;font-weight:700;color:var(--brand-primary);background:var(--brand-primary-soft);padding:2px 6px;border-radius:999px;">🎂 8d</span></div>
-        <div class="evrow"><span style="width:30px;height:30px;border-radius:999px;background:var(--brand-primary);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;">SL</span><span style="flex:1;font-size:12.5px;font-weight:500;">Sarah Lin <span style="color:var(--brand-primary);font-size:10px;">close</span></span><span style="font-size:9px;font-weight:700;color:var(--brand-primary);background:var(--brand-primary-soft);padding:2px 6px;border-radius:999px;">🎂 3d</span></div>
+        <div class="evrow"><span style="width:30px;height:30px;border-radius:999px;background:var(--tier-high);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;">M</span><span style="flex:1;font-size:12.5px;font-weight:500;">Mom <span style="color:var(--tier-high);font-size:10px;">family</span></span><span style="font-size:9px;font-weight:700;color:var(--brand-ink);background:var(--brand-primary-soft);padding:2px 6px;border-radius:999px;">🎂 8d</span></div>
+        <div class="evrow"><span style="width:30px;height:30px;border-radius:999px;background:var(--brand-primary);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;">SL</span><span style="flex:1;font-size:12.5px;font-weight:500;">Sarah Lin <span style="color:var(--brand-ink);font-size:10px;">close</span></span><span style="font-size:9px;font-weight:700;color:var(--brand-ink);background:var(--brand-primary-soft);padding:2px 6px;border-radius:999px;">🎂 3d</span></div>
         <div class="evrow"><span style="width:30px;height:30px;border-radius:999px;background:var(--tier-low);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;">AP</span><span style="flex:1;font-size:12.5px;font-weight:500;">Alex Park <span style="color:var(--tier-low);font-size:10px;">friend</span></span><span style="font-size:10px;color:var(--status-danger);font-weight:500;">5w ago</span></div>
       </div>
     </div></div></div>

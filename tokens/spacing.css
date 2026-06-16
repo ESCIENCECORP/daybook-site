@@ -40,7 +40,7 @@
   --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.1);
   --shadow-xl: 0 24px 60px rgba(0, 0, 0, 0.14);
   /* Brand-tinted glow used behind the logo tile on light marketing canvases */
-  --shadow-brand: 0 18px 40px rgba(124, 58, 237, 0.28);
+  --shadow-brand: 0 18px 40px rgba(245, 158, 11, 0.3);
 
   /* Component sizing */
   --button-height-sm: 32px;

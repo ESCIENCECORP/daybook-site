@@ -1,8 +1,12 @@
 /* ============================================================
-   Daybook AI — Color tokens
-   Ported verbatim from the app's globals.css. Two themes:
-   :root/.light (default) and .dark. Base values first, semantic
-   aliases at the bottom of each theme block.
+   Daybook AI — Color tokens · "Daybreak" daylight palette
+   Brand hue is warm amber/marigold (replaces the inherited
+   sales-pwa purple). Neutrals stay cool slate for legibility.
+   Two tokens carry the brand:
+     --brand-primary  → bright amber, for FILLS (buttons, tiles)
+     --brand-ink      → deep amber, for TEXT / ICONS on light
+   Bright fills take dark ink text (--brand-on); amber/yellow
+   can't carry white text accessibly.
    ============================================================ */
 
 :root,
@@ -25,58 +29,68 @@
   --text-disabled: #9ca3af;
   --text-inverse: #ffffff;
 
-  /* Brand — purple */
-  --brand-primary: #7c3aed;
-  --brand-primary-hover: #6d28d9;
-  --brand-primary-pressed: #5b21b6;
-  --brand-primary-soft: #ede9fe;
-  --brand-primary-soft-hover: #ddd6fe;
+  /* Brand — amber / marigold (Daybreak) */
+  --brand-primary: #f59e0b;          /* bright fill */
+  --brand-ink: #b45309;              /* text/icon on light (AA on white) */
+  --brand-on: #3a2600;               /* text on a bright amber fill */
+  --brand-primary-hover: #d97706;
+  --brand-primary-pressed: #b45309;
+  --brand-primary-soft: #fef3c7;
+  --brand-primary-soft-hover: #fde68a;
   /* Brand gradient (logo tile, splash, marketing accents) */
-  --brand-gradient: linear-gradient(155deg, #8b5cf6 0%, #7c3aed 55%, #6d28d9 100%); /* @kind color */
+  --brand-gradient: linear-gradient(150deg, #fcd34d 0%, #fb923c 60%, #f97316 100%); /* @kind color */
 
-  /* Status */
-  --status-success: #22c55e;
-  --status-success-soft: #ecfdf5;
-  --status-warning: #f59e0b;
-  --status-warning-soft: #fffbeb;
-  --status-danger: #ef4444;
-  --status-danger-soft: #fef2f2;
-  --status-info: #6366f1;
-  --status-info-soft: #eef2ff;
+  /* Playful spectrum — calendars, categories, relationship circles */
+  --c1: #f59e0b; /* marigold */
+  --c2: #f97316; /* tangerine */
+  --c3: #84cc16; /* lime */
+  --c4: #22c55e; /* green */
+  --c5: #14b8a6; /* teal */
+  --c6: #0ea5e9; /* sky */
 
-  /* Relationship circles — same color axis as the app's customer tiers.
-     family (high) / colleague (medium) / friend (low) + close=brand. */
-  --tier-high: #e11d48;
-  --tier-high-soft: #fff1f2;
-  --tier-high-muted: rgba(225, 29, 72, 0.1);
-  --tier-medium: #b45309;
-  --tier-medium-soft: #fffbeb;
-  --tier-medium-muted: rgba(180, 83, 9, 0.1);
-  --tier-low: #0e7490;
-  --tier-low-soft: #ecfeff;
-  --tier-low-muted: rgba(14, 116, 144, 0.1);
+  /* Status — warm ember in place of fire-engine red */
+  --status-success: #16a34a;
+  --status-success-soft: #dcfce7;
+  --status-warning: #ea580c;
+  --status-warning-soft: #fff7ed;
+  --status-danger: #f2603c;          /* coral ember */
+  --status-danger-soft: #ffe9e2;
+  --status-info: #0ea5e9;
+  --status-info-soft: #e0f2fe;
+
+  /* Relationship circles — ride the playful spectrum.
+     family / colleague / friend (no more sales rose-red). */
+  --tier-high: #f97316;              /* family — tangerine */
+  --tier-high-soft: #fff7ed;
+  --tier-high-muted: rgba(249, 115, 22, 0.1);
+  --tier-medium: #84cc16;            /* colleague — lime */
+  --tier-medium-soft: #f7fee7;
+  --tier-medium-muted: rgba(132, 204, 22, 0.1);
+  --tier-low: #0ea5e9;               /* friend — sky */
+  --tier-low-soft: #e0f2fe;
+  --tier-low-muted: rgba(14, 165, 233, 0.1);
 
   /* Event status glyphs (status is a glyph, not a color) */
   --glyph-done: #16a34a;
   --glyph-missed: #dc2626;
-  --glyph-approved: var(--brand-primary);
+  --glyph-approved: var(--brand-ink);
   --glyph-draft: #94a3b8;
 
   /* Calendar surface */
   --calendar-day-bg: #ffffff;
-  --calendar-day-hover-bg: #f1f5ff;
-  --calendar-day-selected-bg: #7c3aed;
-  --calendar-day-selected-text: #ffffff;
+  --calendar-day-hover-bg: #fff7ed;
+  --calendar-day-selected-bg: #f59e0b;
+  --calendar-day-selected-text: #3a2600;
   --calendar-day-inactive-bg: #f1f3f6;
   --calendar-day-inactive-text: #9ca3af;
-  --calendar-today-ring: #7c3aed;
-  --calendar-event-dot: #7c3aed;
-  --calendar-today-tint: rgba(79, 70, 229, 0.06);
-  --calendar-now-line: #dc2626;
+  --calendar-today-ring: #f59e0b;
+  --calendar-event-dot: #f59e0b;
+  --calendar-today-tint: rgba(245, 158, 11, 0.08);
+  --calendar-now-line: #f2603c;
 
   /* Focus */
-  --focus-ring: #7c3aed;
-  --focus-ring-soft: rgba(124, 58, 237, 0.25);
+  --focus-ring: #f59e0b;
+  --focus-ring-soft: rgba(245, 158, 11, 0.3);
 
   /* Semantic mappings */
   --background: var(--bg-app);
@@ -87,9 +101,9 @@
   --muted-foreground: var(--text-secondary);
   --border: var(--border-soft);
   --primary: var(--brand-primary);
-  --primary-foreground: var(--text-inverse);
+  --primary-foreground: var(--brand-on);
   --accent: var(--brand-primary-soft);
-  --accent-foreground: var(--brand-primary);
+  --accent-foreground: var(--brand-ink);
   color-scheme: light;
 }
 
@@ -112,56 +126,66 @@
   --text-disabled: #475569;
   --text-inverse: #0f172a;
 
-  /* Brand */
-  --brand-primary: #8b5cf6;
-  --brand-primary-hover: #a78bfa;
-  --brand-primary-pressed: #7c3aed;
-  --brand-primary-soft: #1e1b4b;
-  --brand-primary-soft-hover: #312e81;
-  --brand-gradient: linear-gradient(155deg, #a78bfa 0%, #8b5cf6 55%, #7c3aed 100%); /* @kind color */
+  /* Brand — amber (brighter on dark) */
+  --brand-primary: #fbbf24;
+  --brand-ink: #fcd34d;              /* amber text/icon on dark surfaces */
+  --brand-on: #3a2600;              /* dark ink still rides bright amber fills */
+  --brand-primary-hover: #fcd34d;
+  --brand-primary-pressed: #f59e0b;
+  --brand-primary-soft: #422006;
+  --brand-primary-soft-hover: #5a2e08;
+  --brand-gradient: linear-gradient(150deg, #fde68a 0%, #fbbf24 55%, #f59e0b 100%); /* @kind color */
+
+  /* Spectrum (brightened for dark) */
+  --c1: #fbbf24;
+  --c2: #fb923c;
+  --c3: #a3e635;
+  --c4: #4ade80;
+  --c5: #2dd4bf;
+  --c6: #38bdf8;
 
   /* Status */
   --status-success: #22c55e;
   --status-success-soft: #14532d;
   --status-warning: #f59e0b;
   --status-warning-soft: #713f12;
-  --status-danger: #ef4444;
+  --status-danger: #f2603c;
   --status-danger-soft: #7f1d1d;
-  --status-info: #6366f1;
-  --status-info-soft: #312e81;
+  --status-info: #38bdf8;
+  --status-info-soft: #0c4a6e;
 
   /* Circles */
-  --tier-high: #fb7185;
-  --tier-high-soft: #3b151b;
-  --tier-high-muted: rgba(251, 113, 133, 0.15);
-  --tier-medium: #fbbf24;
-  --tier-medium-soft: #351304;
-  --tier-medium-muted: rgba(251, 191, 36, 0.15);
-  --tier-low: #22d3ee;
-  --tier-low-soft: #0a2634;
-  --tier-low-muted: rgba(34, 211, 238, 0.15);
+  --tier-high: #fb923c;
+  --tier-high-soft: #3a1d08;
+  --tier-high-muted: rgba(251, 146, 60, 0.15);
+  --tier-medium: #a3e635;
+  --tier-medium-soft: #1a2e05;
+  --tier-medium-muted: rgba(163, 230, 53, 0.15);
+  --tier-low: #38bdf8;
+  --tier-low-soft: #0c2a3a;
+  --tier-low-muted: rgba(56, 189, 248, 0.15);
 
   /* Glyphs */
   --glyph-done: #4ade80;
   --glyph-missed: #f87171;
-  --glyph-approved: var(--brand-primary);
+  --glyph-approved: var(--brand-ink);
   --glyph-draft: #64748b;
 
   /* Calendar */
   --calendar-day-bg: #1e293b;
   --calendar-day-hover-bg: #334155;
-  --calendar-day-selected-bg: #8b5cf6;
-  --calendar-day-selected-text: #ffffff;
+  --calendar-day-selected-bg: #fbbf24;
+  --calendar-day-selected-text: #3a2600;
   --calendar-day-inactive-bg: #0f172a;
   --calendar-day-inactive-text: #475569;
-  --calendar-today-ring: #8b5cf6;
-  --calendar-event-dot: #8b5cf6;
-  --calendar-today-tint: rgba(129, 140, 248, 0.08);
+  --calendar-today-ring: #fbbf24;
+  --calendar-event-dot: #fbbf24;
+  --calendar-today-tint: rgba(251, 191, 36, 0.08);
   --calendar-now-line: #f87171;
 
   /* Focus */
-  --focus-ring: #8b5cf6;
-  --focus-ring-soft: rgba(139, 92, 246, 0.25);
+  --focus-ring: #fbbf24;
+  --focus-ring-soft: rgba(251, 191, 36, 0.25);
 
   /* Semantic mappings */
   --background: var(--bg-app);
@@ -172,8 +196,8 @@
   --muted-foreground: var(--text-secondary);
   --border: var(--border-soft);
   --primary: var(--brand-primary);
-  --primary-foreground: var(--text-inverse);
+  --primary-foreground: var(--brand-on);
   --accent: var(--brand-primary-soft);
-  --accent-foreground: var(--brand-primary);
+  --accent-foreground: var(--brand-ink);
   color-scheme: dark;
 }
